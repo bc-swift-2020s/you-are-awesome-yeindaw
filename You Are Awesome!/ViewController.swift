@@ -19,25 +19,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func messageButtonPressed(_ sender: UIButton) {
+        imageNumber = Int.random(in: 0...9)
         let messages = ["i am super duper smart",
                         "am i really tho",
+                        "i love my major so much definitely no regrets here",
                         "my gpa says otherwise",
                         "unfortunate"]
-        messageLabel.text = messages[stringNumber]
-        stringNumber = stringNumber + 1
+        messageLabel.text = messages[Int.random(in: 0...messages.count-1)]
         
         
-        print(imageNumber)
         //let imageName = "image" + String(imageNumber)
         let imageName = "image\(imageNumber)"
         imageView.image = UIImage(named: imageName )
-        imageNumber = imageNumber + 1
-        if imageNumber == 10{
-            imageNumber = 0
-        }
-        if stringNumber == messages.count{
-            stringNumber = 0
-        }
+//        imageNumber = imageNumber + 1
+//        if imageNumber == 10{
+//            imageNumber = 0
+//        }
+//        if stringNumber == messages.count{
+//            stringNumber = 0
+//        }
         
         
 //        let awesomeMessage = "YOU ARE AWESOME"
