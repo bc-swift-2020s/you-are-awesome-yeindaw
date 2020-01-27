@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         let messages = ["i am super duper smart",
                         "am i really tho",
                         "i love my major so much definitely no regrets here",
+                        "i love swift"
                         "my gpa says otherwise",
                         "unfortunate"]
         
