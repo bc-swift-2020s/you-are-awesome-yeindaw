@@ -28,14 +28,14 @@ class ViewController: UIViewController {
                         "my gpa says otherwise",
                         "unfortunate"]
         
-        var newMessageNumber = Int.random(in: 0...messages.count-1)
+        var newMessageNumber : Int
         repeat {
             newMessageNumber = Int.random(in: 0...messages.count-1)
         } while messageNumber == newMessageNumber
         messageNumber = newMessageNumber
         messageLabel.text = messages[messageNumber]
     
-        var newImageNumber = Int.random(in: 0...totalNumberofImages)
+        var newImageNumber: Int
         repeat {
             newImageNumber = Int.random(in: 0...totalNumberofImages)
         } while imageNumber == newImageNumber
